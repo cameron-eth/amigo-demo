@@ -35,6 +35,7 @@ import {
   Zap,
   Target,
 } from "lucide-react"
+import Image from "next/image"
 
 interface AgentMetrics {
   name: string
@@ -212,9 +213,9 @@ export function AgentDashboard() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 shadow-lg overflow-hidden rounded-lg">
       {/* Header */}
-      <div className="bg-gradient-to-r from-blue-100 to-purple-100 border-b border-blue-200/50">
+      <div className="bg-gradient-to-r from-blue-100 to-purple-100 border-b border-blue-200/50 shadow-md">
         <div className="p-8">
           <div className="flex items-center justify-between">
             <div>
@@ -229,12 +230,7 @@ export function AgentDashboard() {
               </p>
             </div>
             <div className="flex items-center space-x-4">
-              <div
-                className="text-2xl font-bold text-gray-700"
-                style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 300 }}
-              >
-                amigo
-              </div>
+              <Image src="/og-image.png" alt="Amigo Logo" width={100} height={100} />
             </div>
           </div>
         </div>
