@@ -2,6 +2,7 @@ import React from "react";
 import Image from 'next/image';
 import { CardHeader, CardTitle } from "@/components/ui/card";
 import { Stethoscope } from "lucide-react";
+import Link from "next/link";
 
 const MedicalChatHeader: React.FC = () => {
   return (
@@ -18,6 +19,9 @@ const MedicalChatHeader: React.FC = () => {
         </div>
         <div className="flex items-center space-x-2">
           <Image src="/og-image.png" alt="Amigo Logo" width={100} height={100} />
+          <Link href="/dashboard">
+            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Test Environment</span>
+          </Link>
         </div>
       </div>
     </CardHeader>
