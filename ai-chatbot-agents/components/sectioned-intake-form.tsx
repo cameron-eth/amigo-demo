@@ -710,7 +710,7 @@ export function SectionedIntakeForm({ onSubmit, isLoading }: ChatIntakeFormProps
                           disabled={!isFormComplete || isLoading}
                           className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700"
                         >
-                          {isLoading ? "Starting..." : "Start Consultation"}
+                          {isLoading ? "Starting..." : "Begin"}
                         </Button>
                       )}
                     </div>
