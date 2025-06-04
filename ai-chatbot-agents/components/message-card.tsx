@@ -195,6 +195,13 @@ export function MessageCard({ message, onSuggestionClick }: MessageCardProps) {
           {!isUser && message.followUpSuggestions && onSuggestionClick && (
             <FollowUpSuggestions suggestions={message.followUpSuggestions} onSuggestionClick={onSuggestionClick} />
           )}
+
+          <div className="speech-bar sm:hidden">
+            {/* Speech bar content */}
+          </div>
+          <span className="badge sm:hidden">
+            {/* Badge content */}
+          </span>
         </div>
       </div>
     </div>

@@ -18,11 +18,14 @@ const MedicalChatHeader: React.FC = () => {
             <p className="text-blue-100 text-zinc-900/65 text-sm">AI-powered medical guidance and support</p>
           </div>
         </div>
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-2 hidden sm:flex">
           <Image src="/og-image.png" alt="Amigo Logo" width={100} height={100} />
           <Link href="/dashboard">
-            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">View Dashboard</span>
+            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Test Environment</span>
           </Link>
+          <button className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Ask AI</button>
+          <button className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">Show/Hide</button>
+          <button className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">Settings</button>
         </div>
       </div>
     </CardHeader>

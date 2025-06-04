@@ -233,13 +233,13 @@ export function SectionedIntakeForm({ onSubmit, isLoading }: ChatIntakeFormProps
       <div className="max-w-4xl mx-auto">
         {/* Top Bar */}
         <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-sm mb-6 p-3 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 hidden sm:flex">
             <Button variant="ghost" size="icon" className="rounded-full bg-indigo-200/90 text-white hover:bg-blue-700">
               <Mic className="h-5 w-5" />
             </Button>
             <div className="text-gray-500 font-medium">00:00</div>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 hidden sm:flex">
             <Button variant="outline" size="sm" className="rounded-md font-light bg-gray-100 border-gray-200">
               Ask AI
             </Button>
