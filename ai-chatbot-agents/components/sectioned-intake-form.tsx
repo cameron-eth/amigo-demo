@@ -229,7 +229,7 @@ export function SectionedIntakeForm({ onSubmit, isLoading }: ChatIntakeFormProps
     validateSection(currentSection)
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-blue-100 to-indigo-50 p-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-blue-100 to-indigo-50 p-2 sm:p-4">
       <div className="max-w-4xl mx-auto">
         {/* Top Bar */}
         <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-sm mb-6 p-3 flex items-center justify-between hidden sm:flex">
@@ -263,10 +263,13 @@ export function SectionedIntakeForm({ onSubmit, isLoading }: ChatIntakeFormProps
               <div className="bg-gray-200 rounded-full p-2">
                 <User className="h-5 w-5 text-gray-500" />
               </div>
-                <div
-                  className="text-xl text-gray-600 font-extralight" style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 200 }} >Hi there, I'm here to navigate your consultation
-                </div>            
+              <div
+                className="text-xl text-gray-600 font-extralight"
+                style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 200 }}
+              >
+                Hi there, I'm here to navigate your consultation
               </div>
+            </div>
             <div className="p-6">
               <div className="space-y-4">
                 {/* Section Navigation */}
@@ -290,15 +293,19 @@ export function SectionedIntakeForm({ onSubmit, isLoading }: ChatIntakeFormProps
                             isActive
                               ? "bg-blue-600/50 text-white"
                               : isCompleted
-                                ? "bg-green-100 text-green-600"
-                                : "bg-gray-100 text-gray-400"
+                              ? "bg-green-100 text-green-600"
+                              : "bg-gray-100 text-gray-400"
                           }`}
                         >
                           <Icon className="h-5 w-5" />
                         </div>
                         <span
                           className={`text-xs ${
-                            isActive ? "font-medium text-blue-600" : isCompleted ? "text-green-600" : "text-gray-500"
+                            isActive
+                              ? "font-medium text-blue-600"
+                              : isCompleted
+                              ? "text-green-600"
+                              : "text-gray-500"
                           }`}
                         >
                           {section.title}
@@ -313,7 +320,9 @@ export function SectionedIntakeForm({ onSubmit, isLoading }: ChatIntakeFormProps
                   <div className="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none"></div>
                   <div className="space-y-4">
                     <h3 className="text-lg font-medium text-gray-800 mb-4 flex items-center gap-2">
-                      {React.createElement(sections[currentSection].icon, { className: "h-5 w-5 text-blue-600" })}
+                      {React.createElement(sections[currentSection].icon, {
+                        className: "h-5 w-5 text-blue-600",
+                      })}
                       {sections[currentSection].title}
                     </h3>
 
@@ -467,12 +476,12 @@ export function SectionedIntakeForm({ onSubmit, isLoading }: ChatIntakeFormProps
 
                         <div>
                           <Label className="text-sm font-medium text-gray-700 mb-2 block">Common Cities</Label>
-                          <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+                          <div className="grid grid-cols-2 gap-2">
                             {commonCities.map((city) => (
                               <Button
                                 key={city}
                                 variant="outline"
-                                className="justify-start text-sm h-auto py-1.5 bg-white"
+                                className="justify-start text-sm h-auto py-1.5 bg-white w-full"
                                 onClick={() => handleChange("location", city)}
                               >
                                 {city}
@@ -516,7 +525,9 @@ export function SectionedIntakeForm({ onSubmit, isLoading }: ChatIntakeFormProps
                                 <Checkbox
                                   id={condition}
                                   checked={selectedConditions.includes(condition)}
-                                  onCheckedChange={(checked) => handleConditionChange(condition, checked as boolean)}
+                                  onCheckedChange={(checked) =>
+                                    handleConditionChange(condition, checked as boolean)
+                                  }
                                   className="data-[state=checked]:bg-blue-500 data-[state=checked]:border-blue-500"
                                 />
                                 <Label htmlFor={condition} className="text-sm cursor-pointer text-gray-700">
@@ -680,7 +691,7 @@ export function SectionedIntakeForm({ onSubmit, isLoading }: ChatIntakeFormProps
                         <span>Previous</span>
                       </Button>
 
-                      <div className="text-sm text-gray-500">
+                      <div className="text-sm text-gray-500 hidden sm:block">
                         Step {currentSection + 1} of {sections.length}
                       </div>
 
