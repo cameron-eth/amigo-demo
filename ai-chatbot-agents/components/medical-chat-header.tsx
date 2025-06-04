@@ -23,9 +23,7 @@ const MedicalChatHeader: React.FC = () => {
           <Link href="/dashboard">
             <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Test Environment</span>
           </Link>
-          <button className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Ask AI</button>
-          <button className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">Show/Hide</button>
-          <button className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">Settings</button>
+          
         </div>
       </div>
     </CardHeader>

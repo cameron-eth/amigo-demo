@@ -213,7 +213,7 @@ export function AgentDashboard() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 shadow-lg overflow-hidden rounded-lg">
+    <div className="hidden lg:block min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50 shadow-lg overflow-hidden rounded-lg">
       {/* Header */}
       <div className="bg-gradient-to-r from-blue-100 to-purple-100 border-b border-blue-200/50 shadow-md">
         <div className="p-8">
@@ -811,3 +811,7 @@ export function AgentDashboard() {
     </div>
   )
 }
+
+<div className="block lg:hidden min-h-screen flex items-center justify-center bg-blue-200">
+  <p className="text-center text-blue-900 text-lg font-semibold">This dashboard is only viewable on larger screens.</p>
+</div>

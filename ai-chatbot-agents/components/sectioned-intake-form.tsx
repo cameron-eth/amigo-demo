@@ -232,7 +232,7 @@ export function SectionedIntakeForm({ onSubmit, isLoading }: ChatIntakeFormProps
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-blue-100 to-indigo-50 p-4">
       <div className="max-w-4xl mx-auto">
         {/* Top Bar */}
-        <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-sm mb-6 p-3 flex items-center justify-between">
+        <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-sm mb-6 p-3 flex items-center justify-between hidden sm:flex">
           <div className="flex items-center gap-2 hidden sm:flex">
             <Button variant="ghost" size="icon" className="rounded-full bg-indigo-200/90 text-white hover:bg-blue-700">
               <Mic className="h-5 w-5" />
