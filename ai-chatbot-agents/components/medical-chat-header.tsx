@@ -13,7 +13,8 @@ const MedicalChatHeader: React.FC = () => {
             <Stethoscope className="w-5 h-5" />
           </div>
           <div>
-            <CardTitle className="text-2xl text-gray-600" style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 300 }} >Physician Assistant Agent</CardTitle>
+            <CardTitle className="text-2xl text-gray-600" style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 300 }} >                Primary Care Agent
+            </CardTitle>
             <p className="text-blue-100 text-zinc-900/65 text-sm">AI-powered medical guidance and support</p>
           </div>
         </div>

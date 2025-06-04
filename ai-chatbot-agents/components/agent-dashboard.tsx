@@ -223,7 +223,7 @@ export function AgentDashboard() {
                 className="text-3xl text-gray-600 mb-2"
                 style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 300 }}
               >
-                Physician Assistant Agent
+                Primary Care Agent
               </h1>
               <p className="text-gray-500" style={{ fontFamily: "'Orbitron', sans-serif", fontWeight: 300 }}>
                 AI-powered medical guidance and support

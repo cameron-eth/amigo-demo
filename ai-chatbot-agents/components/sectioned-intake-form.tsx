@@ -386,7 +386,7 @@ export function SectionedIntakeForm({ onSubmit, isLoading }: ChatIntakeFormProps
                           </div>
                         </div>
 
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="grid grid-cols-3 gap-4">
                           <div className="space-y-2">
                             <Label htmlFor="heightFeet" className="text-sm font-medium text-gray-700">
                               Height (ft)
@@ -409,6 +409,19 @@ export function SectionedIntakeForm({ onSubmit, isLoading }: ChatIntakeFormProps
                               value={formData.heightInches}
                               onChange={(e) => handleChange("heightInches", e.target.value)}
                               placeholder="Inches"
+                              className="h-10 bg-white border-gray-200"
+                              type="number"
+                            />
+                          </div>
+                          <div className="space-y-2">
+                            <Label htmlFor="weight" className="text-sm font-medium text-gray-700">
+                              Weight (kg)
+                            </Label>
+                            <Input
+                              id="weight"
+                              value={formData.weight}
+                              onChange={(e) => handleChange("weight", e.target.value)}
+                              placeholder="Weight"
                               className="h-10 bg-white border-gray-200"
                               type="number"
                             />

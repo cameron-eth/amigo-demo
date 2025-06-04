@@ -189,7 +189,7 @@ export function MessageCard({ message, onSuggestionClick }: MessageCardProps) {
           </Card>
 
           {/* Line under User Card */}
-          {isUser && <div className="border-t border-blue-200 mt-2"></div>}
+          {/* {isUser && <div className="border-t border-blue-200 mt-2"></div>} */}
 
           {/* Follow-up Suggestions for Assistant Messages */}
           {!isUser && message.followUpSuggestions && onSuggestionClick && (
